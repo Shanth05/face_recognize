@@ -1,5 +1,5 @@
 # generate_website_qr.py
-import qrcode
+import qrcode # type: ignore
 
 def generate_website_qr():
     url = "https://yourwebsite.com"  # Replace with your actual website URL after deployment
