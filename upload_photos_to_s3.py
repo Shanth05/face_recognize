@@ -1,5 +1,5 @@
 # upload_photos_to_s3.py
-import boto3
+import boto3 # type: ignore
 from pathlib import Path
 
 def upload_to_s3(local_dir, bucket_name):
