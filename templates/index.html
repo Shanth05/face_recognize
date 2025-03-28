@@ -1,0 +1,15 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Photo Search</title>
+</head>
+<body>
+    <h1>Find Your Event Photos</h1>
+    <form method="POST" action="/search" enctype="multipart/form-data">
+        <label for="photo">Upload a Photo of Yourself:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
