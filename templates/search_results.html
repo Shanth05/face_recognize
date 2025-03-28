@@ -1,0 +1,22 @@
+<!-- templates/search_results.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Your Event Photos</h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% elif photos %}
+        <ul>
+        {% for photo in photos %}
+            <li><img src="{{ photo }}" alt="Event Photo" style="max-width: 300px;"></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matching photos found.</p>
+    {% endif %}
+    <a href="/">Search Again</a>
+</body>
+</html>
